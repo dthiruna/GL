@@ -2,11 +2,30 @@
 #include "TP_lib.h"
 int main(void)
 {
-    short resultat, i=0;
-    while(i<10)
+ int n,s=0;
+ n = LancerDe();
+ while(n!=1)
   {
-        resultat=LancerDe ();
-        i++;
-   }
+      if(n%2==0)
+      {
+          s=s+n;
+      }
+      else if(n==3)
+      {
+          s=s*2;
+      }
+      else if(n==5)
+      {
+          if(s>=2)
+          {
+              s=s-2;
+          }
+          else
+          {
+              s=0;
+          }
+      }
+  }
+
     return 0;
 }
