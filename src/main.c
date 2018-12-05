@@ -12,7 +12,8 @@ int main(void)
 
     for(q=0;q<100;q++)
     {
-		
+	 initialiserTirage();
+			
         for(s=0;s<6;s++)
 			
      {
@@ -21,7 +22,7 @@ int main(void)
        gagnant[s] = tirerNumero();
      }
 
-	
+
 	 
     }
     return 0;
